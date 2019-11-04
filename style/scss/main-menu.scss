@@ -1,0 +1,160 @@
+.main-menu--active{
+    position: fixed!important;
+    background: #fff;
+    z-index: 10;
+}
+
+
+.main-menu {
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .center_block {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        left_logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .right_text ul {
+            display: flex;
+            align-items: center;
+            margin: 0;
+
+            li {
+                list-style-type: none;
+                padding: 30px 14px;
+                white-space: nowrap;
+                position: relative;
+
+                a {
+                    text-decoration: none;
+                    color: #000000;
+                    font-size: 16px;
+                    font-family: "Lato";
+                    letter-spacing: 0.4px;
+
+                }
+
+                img {
+                    width: 10px;
+                    height: 10px;
+                }
+
+                .sub_menu,
+                .sub_menu--about {
+                    position: absolute;
+                    left: -3%;
+                    height: 100px;
+                    width: 160px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    overflow: hidden;
+                    border: 1px solid #a9a9a9;
+                    transition: all 0.5s;
+                    transform: translateY(100px) scale(0.5) rotateX(180deg);
+                    background: #fff;
+                    opacity: 0;
+                    z-index: 9;
+
+                    a {
+                        padding: 0 15px !important;
+                    }
+                }
+
+                .sub_menu--about {
+                    height: 170px;
+                }
+            }
+
+            li:hover .sub_menu,
+            li:hover .sub_menu--about {
+                z-index: 11;
+                opacity: 1;
+                transition: all 0.5s;
+                border: 1px solid #a9a9a9;
+                transform: translateY(10px) scale(1) rotateX(720deg);
+
+            }
+
+        }
+    }
+
+    .hide_login {
+        margin-right: 20px;
+        visibility: hidden;
+
+        a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 16px;
+            font-family: "Lato";
+            letter-spacing: 0.4px;
+        }
+    }
+
+}
+
+.burger_btn {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../img/burger_menu.png);
+    background-size: cover;
+    position: absolute;
+    top: 30px;
+    left: 17px;
+    visibility: hidden;
+}
+
+
+
+@media only screen and (max-width: 950px) {
+
+    .center_block {
+        width: 100% !important;
+
+        li {
+            padding: 15px 10px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main-menu {
+        justify-content: center;
+        z-index: 10;
+
+        .center_block {
+            width: auto !important;
+
+            ul {
+                display: none !important;
+            }
+        }
+
+    }
+
+    .main-menu .hide_login {
+        margin: 0;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        visibility: visible !important;
+    }
+
+    .burger_btn {
+        visibility: visible !important;
+        cursor: pointer;
+    }
+
+
+
+}

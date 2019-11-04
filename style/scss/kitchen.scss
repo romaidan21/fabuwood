@@ -1,0 +1,160 @@
+.kitchen {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        min-height: 400px;
+        max-height: 800px;
+        opacity: 0.7;
+
+    }
+
+    .center_cont {
+        width: 85%;
+        position: absolute;
+
+        .text {
+            font-weight: bold !important;
+            letter-spacing: 2px;
+            font: 48px "Lato";
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+
+            .general_btn::after {
+                width: 20px;
+                border: 1px solid red;
+            }
+
+            .general_btn:hover .rot_block {
+                transform: rotate(30deg) translateX(375px);
+                transition: all 2s;
+            }
+
+            .general_btn {
+                width: 215px;
+                height: 65px;
+                margin-right: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+
+                a {
+                    text-decoration: none;
+
+                    p {
+                        z-index: 2;
+                        position: absolute;
+                        top: 20%;
+                        left: 20%;
+                        color: #fff;
+                        font: 13px "Lato";
+                        letter-spacing: 5px;
+                    }
+
+                    .rot_block {
+                        height: 500px;
+                        width: 1000px;
+                        display: flex;
+                        justify-content: space-between;
+                        transform: rotate(30deg) translateX(-375px);
+                        transition: all 2s;
+
+
+                        .rot_1,
+                        .rot_2 {
+                            height: 500px;
+                            width: 400px;
+                            background: #000;
+                        }
+
+
+
+                    }
+                }
+
+            }
+
+
+        }
+
+    }
+}
+
+
+@media only screen and (max-width: 769px) {
+
+    .kitchen {
+        .center_cont {
+            .text{
+                font-size: 30px;
+            }
+            .button{
+                .general_btn{
+                    width: 175px;
+                    height: 50px;
+
+                    a{
+                        p{
+                            top: 10%;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 552px) {
+
+      .kitchen {
+        .center_cont {
+            padding-top: 60px;
+            .text{
+                margin: 0 0 50px;
+            }
+            .button{
+                flex-direction: column;
+                align-items: center;
+
+                .general_btn {
+                    margin: 0 0 30px;
+                    height: 55px;
+
+                    a{
+                        p{
+                            top: 15%;
+                            left: 20%;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+

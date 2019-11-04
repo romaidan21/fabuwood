@@ -1,0 +1,111 @@
+.kitchen {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.kitchen img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 400px;
+  max-height: 800px;
+  opacity: 0.7;
+}
+.kitchen .center_cont {
+  width: 85%;
+  position: absolute;
+}
+.kitchen .center_cont .text {
+  font-weight: bold !important;
+  letter-spacing: 2px;
+  font: 48px "Lato";
+  text-align: center;
+  margin-bottom: 50px;
+}
+.kitchen .center_cont .button {
+  display: flex;
+  justify-content: center;
+}
+.kitchen .center_cont .button .general_btn::after {
+  width: 20px;
+  border: 1px solid red;
+}
+.kitchen .center_cont .button .general_btn:hover .rot_block {
+  transform: rotate(30deg) translateX(375px);
+  transition: all 2s;
+}
+.kitchen .center_cont .button .general_btn {
+  width: 215px;
+  height: 65px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.kitchen .center_cont .button .general_btn a {
+  text-decoration: none;
+}
+.kitchen .center_cont .button .general_btn a p {
+  z-index: 2;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  color: #fff;
+  font: 13px "Lato";
+  letter-spacing: 5px;
+}
+.kitchen .center_cont .button .general_btn a .rot_block {
+  height: 500px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  transform: rotate(30deg) translateX(-375px);
+  transition: all 2s;
+}
+.kitchen .center_cont .button .general_btn a .rot_block .rot_1,
+.kitchen .center_cont .button .general_btn a .rot_block .rot_2 {
+  height: 500px;
+  width: 400px;
+  background: #000;
+}
+
+@media only screen and (max-width: 769px) {
+  .kitchen .center_cont .text {
+    font-size: 30px;
+  }
+  .kitchen .center_cont .button .general_btn {
+    width: 175px;
+    height: 50px;
+  }
+  .kitchen .center_cont .button .general_btn a p {
+    top: 10%;
+  }
+}
+@media only screen and (max-width: 552px) {
+  .kitchen .center_cont {
+    padding-top: 60px;
+  }
+  .kitchen .center_cont .text {
+    margin: 0 0 50px;
+  }
+  .kitchen .center_cont .button {
+    flex-direction: column;
+    align-items: center;
+  }
+  .kitchen .center_cont .button .general_btn {
+    margin: 0 0 30px;
+    height: 55px;
+  }
+  .kitchen .center_cont .button .general_btn a p {
+    top: 15%;
+    left: 20%;
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=kitchen.css.map */

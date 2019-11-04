@@ -1,0 +1,72 @@
+.quality_sourced {
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  max-height: 500px;
+  background: #000;
+}
+.quality_sourced .quality_text {
+  padding: 20px 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  width: 50%;
+}
+.quality_sourced .quality_text .header_text {
+  color: white;
+  font: 38px "Lato";
+  margin: 10px 0;
+}
+.quality_sourced .quality_text .header_text p {
+  margin: 0;
+}
+.quality_sourced .quality_text .bottom_text {
+  margin-top: 15px;
+  font: 18px "Lato";
+  color: #757575;
+  line-height: 38px;
+  max-width: 600px;
+  text-align: justify;
+}
+.quality_sourced .quality_slider {
+  width: 50%;
+}
+.quality_sourced .quality_slider .slick_foto img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .quality_sourced .quality_text .header_text {
+    text-align: center;
+    font-size: 33px;
+  }
+  .quality_sourced .quality_text .bottom_text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .quality_sourced {
+    margin: 0;
+    flex-direction: column-reverse;
+    max-height: 800px;
+    align-items: center;
+  }
+  .quality_sourced .quality_text {
+    padding: 0;
+    width: 90%;
+    align-items: flex-start;
+  }
+  .quality_sourced .quality_text .header_text {
+    margin: 0;
+    text-align: inherit;
+  }
+  .quality_sourced .quality_slider {
+    width: 85%;
+    margin: 40px 0;
+  }
+}
+
+/*# sourceMappingURL=quality-sourced.css.map */

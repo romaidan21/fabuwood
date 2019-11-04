@@ -1,0 +1,108 @@
+.dealer {
+  margin-top: 200px;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.dealer .dealer_text {
+  width: 60%;
+  background: #000;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+}
+.dealer .dealer_text .con_text {
+  width: 65%;
+  min-height: 300px;
+  padding-left: 80px;
+  color: #fff;
+}
+.dealer .dealer_text .con_text .title {
+  font: 39px "Lato";
+}
+.dealer .dealer_text .con_text .center {
+  font: 20px "Lato";
+  color: #757575;
+  padding-bottom: 40px;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.dealer .dealer_text .con_text .button {
+  background: #000;
+  color: #fff;
+  padding: 15px 30px;
+  border: 1px solid #fff;
+  font: 13px "Lato";
+}
+.dealer .dealer_text .con_text .button p {
+  margin: 0;
+  letter-spacing: 2px;
+}
+.dealer .dealer_text .con_text .button:hover {
+  background: #fff;
+  color: #000;
+}
+.dealer img {
+  position: absolute;
+  top: -20%;
+  right: 0;
+  width: 60%;
+}
+
+@media only screen and (max-width: 992px) {
+  .dealer .dealer_text {
+    width: 100%;
+    align-items: flex-end;
+  }
+  .dealer .dealer_text .con_text {
+    width: 85%;
+    margin-bottom: 30px;
+  }
+  .dealer img {
+    width: 550px !important;
+    top: -10%;
+  }
+}
+@media only screen and (max-width: 779px) {
+  .dealer .dealer_text .con_text {
+    width: 90%;
+    margin-bottom: 25px;
+    padding-left: 50px;
+  }
+  .dealer .dealer_text .con_text .title {
+    font-size: 35px;
+  }
+  .dealer .dealer_text .con_text .center {
+    padding-bottom: 30px;
+  }
+  .dealer img {
+    top: -15%;
+  }
+}
+@media only screen and (max-width: 552px) {
+  .dealer .dealer_text .con_text {
+    width: 90%;
+    margin-bottom: 25px;
+    padding-left: 30px;
+  }
+  .dealer .dealer_text .con_text .title {
+    font-size: 30px;
+  }
+  .dealer .dealer_text .con_text .center {
+    font-size: 15px;
+    line-height: 25px;
+    padding-bottom: 20px;
+  }
+  .dealer .dealer_text .con_text .button {
+    padding: 10px 25px;
+    font-size: 12px;
+  }
+  .dealer img {
+    min-height: 350px;
+    width: 100% !important;
+    object-fit: cover;
+    top: -15%;
+  }
+}
+
+/*# sourceMappingURL=dealer.css.map */
