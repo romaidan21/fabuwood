@@ -108,6 +108,51 @@
 
 
 
+@media only screen and (min-width: 1800px) {
+
+    .con_redefined {
+        margin-top: 30px;
+        min-height: 290px;
+        div {
+            .redefined_text {
+                font: 40px "Lato";
+            }
+        }
+    }
+
+    .con_q12_foto {
+        .con_center {
+            .con_foto {
+                img {
+                    width: 500px;
+                    height: auto;
+                }
+            }
+            .con_q12 {
+                height: auto;
+                max-width: 550px;
+
+                .top_q12 {
+                    p {
+                        font: 95px "Lato";
+                    }
+                }
+                .text_q12 {
+                    p {
+                        text-align: justify;
+                        line-height: 2.5;
+                        font-size: 30px;
+                        font-family: Lato;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
 @media only screen and (max-width: 769px) {
 
     .con_q12_foto {
@@ -157,10 +202,6 @@
 
 
 }
-
-
-
-
 
 @media only screen and (max-width: 552px) {
 

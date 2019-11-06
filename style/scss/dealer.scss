@@ -63,6 +63,36 @@
 }
 
 
+@media only screen and (min-width: 1800px) {
+
+    .dealer {
+        margin-top: 250px;
+
+        .dealer_text {
+            width: 60%;
+            min-height: 700px;
+
+
+            .con_text {
+                .title {
+                    font-size: 45px;
+                }
+                .center {
+                    font-size: 26px;
+                }
+                .button {
+                    padding: 20px 35px;
+                    font-size: 17px;
+                }
+            }
+        }
+
+        img {
+            top: -25%;
+        }
+    }
+}
+
 @media only screen and (max-width: 992px) {
 
     .dealer {
@@ -83,7 +113,6 @@
         }
     }
 }
-
 
 @media only screen and (max-width: 779px) {
 
@@ -113,7 +142,6 @@
 
 
 }
-
 
 @media only screen and (max-width: 552px) {
 

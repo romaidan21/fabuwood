@@ -2,7 +2,7 @@
     margin-top: 100px;
     display: flex;
     width: 100%;
-    max-height: 500px;
+    height: auto;
     background: #000;
 
     .quality_text {
@@ -51,6 +51,27 @@
 
 
 
+
+@media only screen and (min-width: 1800px) {
+
+    .quality_sourced {
+
+        .quality_text {
+
+            .header_text {
+                text-align: center;
+                font-size: 45px;
+            }
+
+            .bottom_text {
+                font-size: 25px;
+            }
+
+        }
+
+    }
+
+}
 
 @media only screen and (max-width: 992px) {
 

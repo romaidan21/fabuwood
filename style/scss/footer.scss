@@ -10,7 +10,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 1400px;
+        max-width: 1800px;
 
         .top_footer {
             display: flex;
@@ -129,6 +129,25 @@
 
 
 
+@media only screen and (min-width: 1800px) {
+
+    .footer {
+        .center_footer {
+            .top_footer {
+                .con_footer {
+                    ul {
+                        li {
+                            font-size: 20px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    }
+
+
 @media only screen and (max-width: 769px) {
 
     .footer {
@@ -158,7 +177,6 @@
     }
 
 }
-
 
 @media only screen and (max-width: 552px) {
 

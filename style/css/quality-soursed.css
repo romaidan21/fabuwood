@@ -2,7 +2,7 @@
   margin-top: 100px;
   display: flex;
   width: 100%;
-  height: auto;
+  max-height: 500px;
   background: #000;
 }
 .quality_sourced .quality_text {
@@ -37,15 +37,6 @@
   width: 100%;
 }
 
-@media only screen and (min-width: 1800px) {
-  .quality_sourced .quality_text .header_text {
-    text-align: center;
-    font-size: 45px;
-  }
-  .quality_sourced .quality_text .bottom_text {
-    font-size: 25px;
-  }
-}
 @media only screen and (max-width: 992px) {
   .quality_sourced .quality_text .header_text {
     text-align: center;
@@ -78,4 +69,4 @@
   }
 }
 
-/*# sourceMappingURL=quality-sourced.css.map */
+/*# sourceMappingURL=quality-soursed.css.map */
