@@ -462,21 +462,24 @@
     <script src="js/slick.min.js"></script>
 
     <script>
+
         document.onscroll = function() {
+
             let con_foto = $(".con_foto")[0];
 
             let cords = con_foto.getBoundingClientRect();
 
-            if (cords.bottom < window.innerHeight - 100) {
+            if (cords.bottom < window.innerHeight - 100 ) {
                 $(".approved_animation").addClass("active_animation");
-
-
-            } else if (cords.bottom > window.innerHeight - 50) {
+            } else if (cords.bottom > window.innerHeight - 10) {
                 $(".approved_animation").removeClass("active_animation");
             }
 
-
+            if ( cords.bottom < window.innerHeight - 600) {
+                $(".approved_animation").removeClass("active_animation");
+            }
         };
+
 
     </script>
 
@@ -534,6 +537,13 @@
             }],
         });
 
+    </script>
+
+
+    <script>
+        $('a[href="#"]').click(function(){
+            return false;
+        });
     </script>
 
 </body>
