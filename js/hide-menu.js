@@ -1,7 +1,10 @@
 $("#burger_btn").on('click', function () {
 
-    $(".hide_menu").addClass("hide_menu--active")
-
+    $(".hide_menu").addClass("hide_menu--active");
+    setTimeout( function () {
+        $('.footer, .dream_kitchen, .dealer, .kitchen, .quality_sourced, .con_q12_foto, .con_redefined, .con_black_white, .slick_header')
+            .addClass('displayNone');
+    }, 500)
 
 });
 
@@ -10,9 +13,11 @@ $("#close_btn, #home_pages, #blog").on('click', function () {
 
    setTimeout(function(){
         $(".hide_menu").removeClass("hide_menu--active");
+
     }, 500);
      $(".close_btn").addClass("close_btn--after");
-
+    $('.footer, .dream_kitchen, .dealer, .kitchen, .quality_sourced, .con_q12_foto, .con_redefined, .con_black_white, .slick_header')
+        .removeClass('displayNone');
 });
 
 

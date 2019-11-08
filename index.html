@@ -10,9 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 
-<body>
-
-    <nav class="main-menu">
+<body style="display: flex; justify-content: center">
+    <div style="max-width: 1920px; margin: 0; width: 100%;" >
+        <nav class="main-menu">
 
         <div class="center_block">
             <div class="left_logo">
@@ -69,12 +69,8 @@
             <a href="#">Login</a>
         </span>
     </nav>
-
-
-    <div id="burger_btn" class="burger_btn"></div>
-
-
-    <div class="hide_menu">
+        <div id="burger_btn" class="burger_btn"></div>
+        <div class="hide_menu">
 
         <div class="con_close_btn">
             <div id="close_btn" class="close_btn"></div>
@@ -124,9 +120,7 @@
             </div>
         </ul>
     </div>
-
-
-    <div class="slick_header">
+        <div class="slick_header">
         <div class="slider">
             <img src="img/slider1.jpg" alt="slider">
             <div class="center_text">
@@ -149,9 +143,7 @@
             </div>
         </div>
     </div>
-
-
-    <div class="con_black_white">
+        <div class="con_black_white">
         <div class="dif_color color_black">
             <div class="con_center_text">
                 <p>Kitchen Dealers</p>
@@ -166,17 +158,13 @@
             </div>
         </div>
     </div>
-
-
-    <div class="con_redefined">
+        <div class="con_redefined">
 
         <div>
             <p class="redefined_text">QUALITY <br>REDEFINED</p>
         </div>
     </div>
-
-
-    <div class="con_q12_foto">
+        <div class="con_q12_foto">
 
         <div class="con_center">
 
@@ -200,9 +188,7 @@
         </div>
 
     </div>
-
-
-    <div class="quality_sourced">
+        <div class="quality_sourced">
         <div class="quality_text">
             <div class="header_text">
                 <p>Quality Sourced Lumber</p>
@@ -224,11 +210,7 @@
 
         </div>
     </div>
-
-
-
-
-    <div class="kitchen">
+        <div class="kitchen">
 
         <img src="img/kitchen.jpg" alt="kitchen">
 
@@ -263,9 +245,7 @@
         </div>
 
     </div>
-
-
-    <div class="dealer">
+        <div class="dealer">
         <div class="dealer_text">
             <div class="con_text">
                 <div class="title">
@@ -281,9 +261,7 @@
         </div>
         <img src="img/people.png" alt="dealer">
     </div>
-
-
-    <div class="dream_kitchen">
+        <div class="dream_kitchen">
         <div class="top_title">
             <p>Your dream kitchen awaits.</p>
         </div>
@@ -291,12 +269,7 @@
             <p>LOCATE FABUWOOD DEALER</p>
         </div>
     </div>
-
-
-
-
-
-    <div class="footer">
+        <div class="footer">
 
         <div class="center_footer">
             <div class="top_footer">
@@ -445,7 +418,7 @@
 
 
     </div>
-
+    </div>
 
 
 
@@ -483,25 +456,6 @@
 
     </script>
 
-<!--
-    <script>
-        window.addEventListener('scroll', function() {
-
-            if (pageYOffset > 80) {
-                $(".main-menu, .burger_btn").addClass("main-menu--active");
-
-                $(".slick_header").addClass("slick---active");
-
-
-            } else {
-                $(".main-menu").removeClass("main-menu--active");
-                $(".slick_header").removeClass("slick---active");
-            }
-        });
-
-    </script>
--->
-
     <script>
         $('.slick_header').slick({
             dots: true,
@@ -538,7 +492,6 @@
         });
 
     </script>
-
 
     <script>
         $('a[href="#"]').click(function(){
